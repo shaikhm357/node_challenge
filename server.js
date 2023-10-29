@@ -5,6 +5,9 @@ const books = require('./routes/books')
 
 const app = express()
 
+// body parser
+app.use(express.json())
+
 // decorate dotenv file
 dotenv.config({ path: './config/config.env' })
 
