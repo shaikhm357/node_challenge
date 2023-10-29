@@ -1,0 +1,22 @@
+[
+    {
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "description": "To Kill a Mockingbird is a classic novel by Harper Lee, set in the American South during the 1930s. It explores themes of racial injustice and moral growth through the eyes of a young girl named Scout Finch."
+    },
+    {
+        "bookName": "1984",
+        "author": "George Orwell",
+        "description": "1984 is a dystopian novel by George Orwell, depicting a totalitarian society where individualism is suppressed, and the government monitors and controls every aspect of people's lives."
+    },
+    {
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "description": "The Catcher in the Rye is a coming-of-age novel by J.D. Salinger, narrated by the teenage character Holden Caulfield. It explores themes of alienation and rebellion."
+    },
+    {
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "description": "Pride and Prejudice is a classic novel by Jane Austen, focusing on the societal norms, manners, and marriage in the early 19th century England, with a strong-willed heroine, Elizabeth Bennet."
+    }
+]
