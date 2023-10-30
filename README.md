@@ -37,8 +37,14 @@ npm start
 path: documentation/postma....json
 ```
 
-## Demo
+## Deployed
 
 Below is the link of the deployed one
 
 <https://node-challenge-glng.onrender.com/api/v1/books>
+
+## YouTube
+
+Below is the link of the YouTube video of testing api using postman
+
+<https://www.youtube.com/watch?v=kyjMiTq8L4A>
