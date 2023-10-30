@@ -1,0 +1,417 @@
+{
+	"info": {
+		"_postman_id": "beddce89-1c6a-4789-aa9b-7ba39a11ebfb",
+		"name": "Books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14811809"
+	},
+	"item": [
+		{
+			"name": "GET Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/v1/books",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/books",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"books"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1223"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4c7-zahGL5mpw27VGGfSXzNpJ+PLQrI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 30 Oct 2023 07:33:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"count\": 4,\n    \"data\": [\n        {\n            \"_id\": \"653f509a629e3decf981e56a\",\n            \"name\": \"To Kill a Mockingbird\",\n            \"description\": \"To Kill a Mockingbird is a classic novel by Harper Lee, set in the American South during the 1930s. It explores themes of racial injustice and moral growth through the eyes of a young girl named Scout Finch.\",\n            \"author\": \"Harper Lee\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"653f5c2bd88be8a6d5f4688f\",\n            \"name\": \"1984\",\n            \"description\": \"1984 is a dystopian novel by George Orwell, depicting a totalitarian society where individualism is suppressed, and the government monitors and controls every aspect of people's lives.\",\n            \"author\": \"George Orwell\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"653f5c3cd88be8a6d5f46892\",\n            \"name\": \"The Catcher in the Rye\",\n            \"description\": \"The Catcher in the Rye is a coming-of-age novel by J.D. Salinger, narrated by the teenage character Holden Caulfield. It explores themes of alienation and rebellion.\",\n            \"author\": \"J.D. Salinger\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"653f5c4dd88be8a6d5f46895\",\n            \"name\": \"Pride and Prejudice\",\n            \"description\": \"Pride and Prejudice is a classic novel by Jane Austen, focusing on the societal norms, manners, and marriage in the early 19th century England, with a strong-willed heroine, Elizabeth Bennet.\",\n            \"author\": \"Jane Austen\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Book By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/v1/books/653ebc3268855ee0a4074eb7",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"653ebc3268855ee0a4074eb7"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/books/653f509a629e3decf981e56a",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"653f509a629e3decf981e56a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "343"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"157-tqlW+sA9Zf1gsJmfs4F5z9j9cgU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 30 Oct 2023 07:33:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"653f509a629e3decf981e56a\",\n        \"name\": \"To Kill a Mockingbird\",\n        \"description\": \"To Kill a Mockingbird is a classic novel by Harper Lee, set in the American South during the 1930s. It explores themes of racial injustice and moral growth through the eyes of a young girl named Scout Finch.\",\n        \"author\": \"Harper Lee\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"To Kill a Mockingbird\",\n    \"author\": \"Harper Lee\",\n    \"description\": \"To Kill a Mockingbird is a classic novel by Harper Lee, set in the American South during the 1930s. It explores themes of racial injustice and moral growth through the eyes of a young girl named Scout Finch.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/v1/books",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"name\": \"Pride and Prejudice\",\n        \"author\": \"Jane Austen\",\n        \"description\": \"Pride and Prejudice is a classic novel by Jane Austen, focusing on the societal norms, manners, and marriage in the early 19th century England, with a strong-willed heroine, Elizabeth Bennet.\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/books",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"books"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "326"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"146-fGtgRlsJbR2GzZQ+wTEzSjN/e3k\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 30 Oct 2023 07:33:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"name\": \"Pride and Prejudice\",\n        \"description\": \"Pride and Prejudice is a classic novel by Jane Austen, focusing on the societal norms, manners, and marriage in the early 19th century England, with a strong-willed heroine, Elizabeth Bennet.\",\n        \"author\": \"Jane Austen\",\n        \"_id\": \"653f5c4dd88be8a6d5f46895\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\" : \"helium\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/v1/books/653ebc3268855ee0a4074eb7",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"653ebc3268855ee0a4074eb7"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\" : \"updated name field\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/books/653f509a629e3decf981e56a",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"653f509a629e3decf981e56a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "340"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"154-ogA+60jfuxUhtFPG3HDTmQ0X+kY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 30 Oct 2023 07:34:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"653f509a629e3decf981e56a\",\n        \"name\": \"updated name field\",\n        \"description\": \"To Kill a Mockingbird is a classic novel by Harper Lee, set in the American South during the 1930s. It explores themes of racial injustice and moral growth through the eyes of a young girl named Scout Finch.\",\n        \"author\": \"Harper Lee\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Remove Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/v1/books/2",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/books/653f5c2bd88be8a6d5f4688f",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"653f5c2bd88be8a6d5f4688f"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-pIPrt4esgEyEkX/w62Rnrj9XXdg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 30 Oct 2023 07:34:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {}\n}"
+				}
+			]
+		}
+	]
+}
