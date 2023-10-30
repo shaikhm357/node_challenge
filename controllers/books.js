@@ -55,13 +55,32 @@ exports.createBook = async (req, res) => {
 // @desc    UPDATE all book
 // @route   PUT /api/v1/books/:id
 // @access  Public
-exports.UpdateBook = (req, res) => {
-    res.status(200).json({ success: true, msg: 'Update Book' })
+exports.UpdateBook = async (req, res) => {
+    try {
+        if (Object.keys(req.body).length === 0) {
+            return res.status(400).json({ success: false, msg: `please Add Something to update getting ${JSON.stringify(req.body)} object` })
+        }
+        const book = await Books.findByIdAndUpdate(req.params.id, req.body, {
+            new: true,
+            runValidators: true
+        })
+        if (!book) {
+            return res.status(400).json({ success: false, msg: `Book Not Found of Id ${req.params.id}` })
+        }
+        res.status(200).json({ success: true, data: book })
+    } catch (err) {
+        res.status(500).json({ success: false, error: err.message })
+    }
 }
 
 // @desc    remove book
 // @route   DELETE /api/v1/books/:id
 // @access  Public
-exports.removeBook = (req, res) => {
-    res.status(200).json({ success: true, msg: 'Delete Book' })
+exports.removeBook = async (req, res) => {
+    try {
+        await Books.deleteOne({ _id: req.params.id })
+        res.status(200).json({ success: true, data: {} })
+    } catch (err) {
+        res.status(500).json({ success: false, error: err })
+    }
 }
